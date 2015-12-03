@@ -8,13 +8,13 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Austin's Lab
+title : A. Glen Smith
 tagline: Blog
 author :
   name : Austin Smith
-  email : blah@email.test
+  email : aglensmith@gmail.com
   github : aglensmith
-  twitter : austinslab
+  twitter : aglensmith
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
