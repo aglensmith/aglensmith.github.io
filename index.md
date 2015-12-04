@@ -7,8 +7,8 @@ tagline: Supporting tagline
 
 <ul >
     {% for post in site.posts limit:1 %}
-    #{{ post.title }}
-    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    <h1{{ post.title }}</h1>
+    <br><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
         {{ post.content}}<br>
            <!-- <a href="{{ post.url }}">Read more...</a><br><br> -->
     {% endfor %}
