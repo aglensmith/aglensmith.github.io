@@ -812,7 +812,7 @@ pre {
     width: 43.125em;
   }
   .unit-article .unit-head-inner, .unit-article .entry-content, .unit-article .misc-content {
-    width: 43.125em;
+    width: 55em;
   }
   .unit-article .unit-foot-inner {
     width: 88.125em;
@@ -842,7 +842,6 @@ pre {
   .the-footer .unit-inner h4,
   .the-footer .unit-inner h5,
   .the-footer .unit-inner p,
-  .the-footer .unit-inner ul,
   .the-footer .unit-inner ol,
   .the-footer .unit-inner dl,
   .the-footer .unit-inner blockquote {
@@ -853,9 +852,12 @@ pre {
 
 /* Added by AGS */
 
-.pre {
-    word-wrap: normal;
-    white-space: pre;
+.center {
+    text-align: center;
+}
+pre {
+    white-space: pre !important;
+    word-wrap: normal !important;
     }
 
 .pad-20 {
