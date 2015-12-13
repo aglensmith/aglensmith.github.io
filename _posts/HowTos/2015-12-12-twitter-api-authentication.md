@@ -7,7 +7,7 @@ title: Twitter API Authentication Using C# and .NET's HttpClient
 ---
 {% include JB/setup %}     
 
->###Do no use a cannon to kill a mosquito 
+>###Do not use a cannon to kill a mosquito 
 >
 >###-- Confucious
 
