@@ -853,6 +853,11 @@ pre {
 
 /* Added by AGS */
 
+.pre {
+    word-wrap: normal;
+    white-space: pre;
+    }
+
 .pad-20 {
     padding: 20px;
 }
