@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 title: Austin Smith
 tagline: Supporting tagline
 ---
@@ -7,35 +7,21 @@ tagline: Supporting tagline
 
 <ul >
     {% for post in site.posts limit:1 %}
-    <h1>{{ post.title }}</h1>
-    <br><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ BASE_PATH }}{{ post.url }}">
+    <h1 class="PostTitle">{{ post.title }}</h1>
+    <div class="PostDate"><span class="PostDate">{{ post.date | date_to_string }}</span></div>
+    </a>
         {{ post.content}}<br>
-           <!-- <a href="{{ post.url }}">Read more...</a><br><br> -->
     {% endfor %}
 </ul>
 
-####Other Recent Posts:
-
+####Other Posts:
 <ul class="posts">
   {% for post in site.posts limit 5 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-<!--<ul >
-    {% for post in site.posts limit 4 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-        {{ post.content | strip_html | truncatewords:75}}<br>
-            <a href="{{ post.url }}">Read more...</a><br><br>
-    {% endfor %}
-</ul>
-    
-##Recent Posts:
-    
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>-->
+
 
 

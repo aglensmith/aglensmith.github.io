@@ -850,3 +850,28 @@ pre {
     margin-right: 360px;
   }
 }
+
+/* Added by AGS */
+
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-40 {
+    padding: 40px;
+}
+
+.pad-top-80 {
+    padding-top: 80px;
+}
+
+.PostTitle {
+    margin-bottom: 0px;
+    line-height: 1.25;
+}
+
+.PostDate {
+    margin-bottom: 52px;
+}
+text-center{text-align:center;}
+.list-inline{padding-left:0;list-style:none}.list-inline>li{display:inline-block;padding-right:5px;padding-left:5px}.list-inline>li:first-child{padding-left:0}
