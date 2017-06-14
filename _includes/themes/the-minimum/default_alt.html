@@ -9,24 +9,51 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <link href='/assets/homepage/style.css' rel="stylesheet" media="all">
+	<link rel="stylesheet" href="/assets/themes/the-minimum/css/bootstrap.min.css">
+    <link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
 </head>
 <body>
 
 <div id="page" class="hentry">
 	<header class="the-header">
-
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="{{ HOME_PATH }}">{{ site.title }}</a></p>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
 	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					{{ content }}
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
 	<footer class="the-footer">
-
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">         
+				<div class="misc vcard">
+                    <div class="container">
+                        <div class="col-sm-4 col-med-4 col-lg-4"></div>
+                        <div class="col-sm-4 col-med-4 col-lg-4 pad-top-80" id="SocialIcons">
+                            <ul class="list-inline center">
+                                <li><a href="//github.com/{{ site.author.github }}/"><i class="fa fa-github"></i></a></li>
+                                <li><a href="//twitter.com/{{ site.author.twitter }}/"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="//facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook"></i></a</li>
+                                <li><a href="/rss.xml"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-med-4 col-lg-4"></div>
+                    </div>
+                </div>
+				</div>
+			</div><!-- unit-foot-inner -->
 	</footer>
 </div><!-- page -->
                     

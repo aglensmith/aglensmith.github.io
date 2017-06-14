@@ -193,10 +193,10 @@ a:hover {
   text-decoration: none;
 }
 /* HIGHLIGHTER */
-pre {
+pre, .link-code {
   margin-bottom: 1.625em;
 }
-pre {
+pre, .link-code {
   color: #f2f2f2;
   background-color: #393939;
   border: 1px solid #393939;
@@ -858,7 +858,7 @@ pre {
 .center {
     text-align: center;
 }
-pre {
+pre, .link-code {
     white-space: pre !important;
     word-wrap: normal !important;
     }

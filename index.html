@@ -1,0 +1,30 @@
+---
+layout: homepage
+title: Austin Smith
+tagline: Supporting tagline
+---
+{% include JB/setup %}
+
+
+<a href="http://github.com/aglensmith/">
+    <div class="link-code">//github</div>
+</a>
+
+<a href="//www.linkedin.com/in/austin-smith-952632a7/">
+    <div class="link-code">//LinkedIn</div>
+</a>
+
+<a href="//www.aglensmith.com/blog">
+    <div class="link-code">//blog</div>
+</a>
+
+<h4> Other Posts:</h4>
+<ul class="posts">
+  {% for post in site.posts limit 5 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+
+
+
