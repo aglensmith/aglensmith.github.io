@@ -3,7 +3,7 @@ name: Austin Smith
 bio: I automate things so that I have more time to automate other things
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A blog about tech (main to remind me how to do things)
 
 # if it's an external image, update below for true
 # better with square images
@@ -22,7 +22,7 @@ url: https://aglensmith.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-69350208-2'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -35,16 +35,16 @@ disqus:
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-# twitter: mytwitter
+twitter: aglensmith
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: austin-smith-952632a7
 # youtube: myyoutube
 # spotify: myspotify
 github: aglensmith
 # lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
+stackoverflow: 8262358/austin-smith
 # quora: userquora
 # reddit:
 # medium: medium
