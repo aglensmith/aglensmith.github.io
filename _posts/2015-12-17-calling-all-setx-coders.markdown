@@ -8,7 +8,6 @@ tag:
 - community
 - beaumont.js
 - meetups
-star: false
 category: blog
 author: Austin Smith
 description: coffee and code

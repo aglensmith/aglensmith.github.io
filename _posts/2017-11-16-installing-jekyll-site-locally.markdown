@@ -9,7 +9,6 @@ tag:
 - blog
 - static
 - site
-star: false
 category: blog
 author: Austin Smith
 description: How to install a jekyll site locally
