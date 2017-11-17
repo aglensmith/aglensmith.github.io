@@ -1,16 +1,15 @@
 ---
-title: " beaumont.js&#58; Calling All SETX Coders"
+title: "Twitter API Authentication Using C# and .NET's HttpClient"
 layout: post
-date: 2015-12-17 21:07
+date: 2015-11-17 21:07
 headerImage: false
 tag:
-- networking
-- community
-- beaumont.js
-- meetups
+- REST
+- .NET
+- twitter API
 category: blog
 author: Austin Smith
-description: coffee and code
+description: Twitter API Authentication Using C# and .NET's HttpClient
 ---
 
 >###Do not use a cannon to kill a mosquito 
