@@ -9,7 +9,7 @@ tag:
 - development
 - python
 - tech
-hide: true
+hidden: true
 category: blog
 author: Austin Smith
 description: Description goes here
