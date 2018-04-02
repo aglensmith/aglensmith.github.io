@@ -4,9 +4,9 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Currently: Technical(ly) Support Manager at AmeriCommerce</p>
+<p>Software Developer at <a href="//www.americommerce.com">AmeriCommerce</a></p>
 
-<p>I like to organize things. I like to  fix things. I like to code. I want to get paid to code =).</p>
+<p>I like to organize things. I like to  fix things. I like to build things.</p>
 
 <h2>Skills</h2>
 
@@ -14,13 +14,12 @@ layout: page
 	<li>Python</li>
 	<li>C#</li>
 	<li>ASP.NET</li>
-	<li>Javascript (Vanilla / JQuery) </li>
+	<li>Javascript</li>
 	<li>HTML / CSS</li>
 	<li>Git</li>
 	<li>JIRA</li>
 	<li>Zendesk</li>
-	<li>Minecraft</li>
-	<li>Juggling</li>
+	<li>Skateboarding</li>
 </ul>
 
 <h2>Projects</h2>
