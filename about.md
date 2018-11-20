@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Software Engineer at <a href="//www.americommerce.com">American Gaming Systems</a></p>
+<p>Software Engineer at <a href="//playags.com">American Gaming Systems</a></p>
 
 <p>I like to organize things. I like to  fix things. I like to build things.</p>
 
