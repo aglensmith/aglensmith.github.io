@@ -2,7 +2,7 @@
 
     var quotes = {
         "list": [
-            "while(!dead){oneMoreTry();}"
+            "Software Engineer at American Gaming Systems"
         ]
     };
 
