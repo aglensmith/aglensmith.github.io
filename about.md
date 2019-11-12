@@ -4,29 +4,27 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Software Engineer at <a href="//playags.com">American Gaming Systems</a></p>
+Developer Documentation Specialist [BigCommerce](https://www.bigcommerce.com).
 
-<p>I like to organize things. I like to  fix things. I like to build things.</p>
+I like to organize things. I like to  fix things. I like to build things.
 
-<h2>Skills</h2>
+## Skills
+* Python
+* Javascript
+* HTML/CSS
+* C#
+* ASP.NET
+* API Modeling
+* Technical Writing
+* Goldeneye 64
+* Git
+* Subversion
+* JIRA
+* Zendesk
+* Foosball
+* Skateboarding
+* Guitar
 
-<ul class="skill-list">
-	<li>C#</li>
-	<li>ASP.NET</li>
-	<li>Python</li>
-	<li>Lua</li>
-	<li>Javascript</li>
-	<li>HTML / CSS</li>
-	<li>Goldeneye 64</li>
-	<li>Git</li>
-	<li>Subversion</li>
-	<li>JIRA</li>
-	<li>Zendesk</li>
-	<li>Skateboarding</li>
-</ul>
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/aglensmith/brocli">brocli</a></li>
-</ul>
+## Projects
+* [brocli](https://github.com/aglensmith/brocli) - Chrome extension that turns Chrome's omnibar into a command line interface for navigating the web
+* [stoplightiopy](https://github.com/aglensmith/stoplightiopy) - Python3 API Client and CLI for [Stoplight](https://stoplight.io/)
