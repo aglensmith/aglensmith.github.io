@@ -2,7 +2,7 @@
 
     var quotes = {
         "list": [
-            "Software Engineer at American Gaming Systems"
+            "Developer Documentation Specialist @ BigCommerce"
         ]
     };
 
