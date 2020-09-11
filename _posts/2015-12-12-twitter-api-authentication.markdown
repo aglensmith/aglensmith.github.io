@@ -12,9 +12,9 @@ author: Austin Smith
 description: Twitter API Authentication Using C# and .NET's HttpClient
 ---
 
->###Do not use a cannon to kill a mosquito 
+> ### Do not use a cannon to kill a mosquito 
 >
->###-- Confucious
+> -- Confucious
 
 Although wantonly attempting to obliterate a mosquito with a black powder cannon might be fun, it is *probably* a bad idea; it is overkill and uncessary. Confucious' advice on insect removal applies to software development as well. I frequently consider the ancient Chinese teacher's words before installing third party libraries into a project.
 
@@ -22,7 +22,7 @@ That's why, for my current project [PolAgora](/polagora.html), I chose .NET's Ht
 
 Twitter's APIs use several different methods of Authentication. This post covers [application-only authentication](https://dev.twitter.com/oauth/application-only) for Twitter's Search API, which uses [OAuth 2](http://tools.ietf.org/html/rfc6749). I suggest reading [twitter's overview](https://dev.twitter.com/oauth/application-only) of the [application-only authentication](https://dev.twitter.com/oauth/application-only) process before continuing.
 
-##1. Setup App.config
+## Setup App.config
 
 If you are just writing a one-off, private script, you can probably skip this step, but if you intend to use version control and github or share your code with anyone, it is strongly suggested that your API key and secret be stored outside of your code for security reasons. Adding a .config file to your project along with a .gitignore entry is a simple way of accomplishing this. If your project already has an App.Config, just add in an entrey for the Twitter Consumer Key and Consumer Secret like so:
 
@@ -54,7 +54,7 @@ using System.Web.Script.Serialization;
 using System.Configuration;
 ```
 
-##2. Create Response Class
+## Create Response Class
 Once we make our request for a bearer token, twitter's response content will be in JSON:
 
 ```json
@@ -78,7 +78,7 @@ namespace TwitterApiCaller
         }
 ```
 
-##3. Write method for Base 64 Encoding Credentials
+## Write method for Base 64 Encoding Credentials
 
 Twitter requires API credentials be base 64 encoded before being sent over HTTP, so we'll need to add some code to handle the encoding. We'll use this method later: 
 
@@ -90,7 +90,7 @@ Twitter requires API credentials be base 64 encoded before being sent over HTTP,
         }
 ```
 
-##4. Get Bearer Token with Asynch Method
+## Get Bearer Token with Asynch Method
 
 I'm still digesting how asynch affects a progam's control flow, but the gist is that asynching a method opens a new, temporary thread specifically for the method, which allows the rest of the program code to execute without waiting for the asynch method to return. This will ensure other code -- for instance UI code -- is not blocked while the method is doing it's work.
 
@@ -105,7 +105,7 @@ static async Task<string> GetBearerAsync()
 Notice we also instantiate an HttpClient object with `using`. The [using statement](https://msdn.microsoft.com/en-us/library/yh598w02.aspx) ensures that an object is properly disposed of after use, so that it doesn't use up resources when it is no longer needed. Edward Norton's character in Fight Club would say `using` makes "single-serving" objects. 
 
 
-###String Declarations:
+### String Declarations:
 Twitter's API auth documentation suggests URL encoding tokens and secrets. We do that with HttpUtility, then Base 64 encode the concatenated key and secret, as required. 
 
 ```csharp       
@@ -123,7 +123,7 @@ Twitter's API auth documentation suggests URL encoding tokens and secrets. We do
         ...
 ```
 
-###Setting up the headers and post body:
+### Setting up the headers and post body:
 
 
 ```csharp    
@@ -137,7 +137,7 @@ Twitter's API auth documentation suggests URL encoding tokens and secrets. We do
         ...
 ```
 
-###POST, deserialization, and return of bearer access token:
+### POST, deserialization, and return of bearer access token:
 Here, we post then deserialize the response content into the response object we created above. 
 
 ```csharp
@@ -155,7 +155,7 @@ Here, we post then deserialize the response content into the response object we 
 }
 ```
 
-##5. Authenticate Calls with Bearer Token
+## Authenticate Calls with Bearer Token
 Now that the hard part of getting the bearer token is over, requests are much easier. Just make a request similar to above, using the bearer token in the authorization header:
 
 ```csharp
