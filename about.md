@@ -2,6 +2,7 @@
 title: About
 layout: page
 ---
+
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
 Developer Documentation Specialist [BigCommerce](https://www.bigcommerce.com).
