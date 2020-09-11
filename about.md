@@ -5,7 +5,7 @@ layout: page
 
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-Developer Documentation Specialist [BigCommerce](https://www.bigcommerce.com).
+Developer Documentation Specialist @ [BigCommerce](https://www.bigcommerce.com).
 
 I like to organize things. I like to  fix things. I like to build things.
 
