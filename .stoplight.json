@@ -5,7 +5,7 @@
       "include": ["**"]
     },
     "markdown": {
-      "rootDir": "_posts",
+      "rootDir": "/_posts",
       "include": ["**"]
     },
     "image": {
