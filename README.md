@@ -4,19 +4,16 @@ My personal [website](https://www.aglensmith.com/).
 
 ## Develop
 
-Install [Jekyll](http://jekyllrb.com), [NodeJS](https://nodejs.org/) and [Bundler](http://bundler.io/), then run the following commands.
-
 ```bash
-bundle install
-bundle exec jekyll serve --config _config.yml,_config-dev.yml
-```
+sudo docker run -v $(pwd):/site -it --entrypoint bash bretfisher/jekyll
+bundle install --retry 5 --jobs 20
+bundle exec jekyll build
 
-## Test
+exit
 
-```bash
-bundle exec htmlproofer ./_site
+sudo docker run -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
 
 ## About
 
-This theme is a fork of [Indigo](https://github.com/sergiokopplin/indigo/fork).
+This theme is a fork of [Indigo](https://github.com/sergiokopplin/indigo).

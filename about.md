@@ -3,29 +3,34 @@ title: About
 layout: page
 ---
 
-![Profile Image]({{ site.url }}/{{ site.picture }})
+![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-Developer Documentation Specialist @ [BigCommerce](https://www.bigcommerce.com).
-
-I like to organize things. I like to  fix things. I like to build things.
+{{site.bio}} @ <a href="{{site.employer-url}}" target="_blank">{{site.employer-name}}</a>
 
 ## Skills
+
+### Languages
+
+* C#
+* SQL
 * Python
 * Javascript
-* HTML/CSS
-* C#
-* ASP.NET
-* API Modeling
-* Technical Writing
-* Goldeneye 64
-* Git
-* Subversion
-* JIRA
-* Zendesk
-* Foosball
-* Skateboarding
-* Guitar
+* Bash
+* HTML / CSS
 
-## Projects
-* [brocli](https://github.com/aglensmith/brocli) - Chrome extension that turns Chrome's omnibar into a command line interface for navigating the web
-* [stoplightiopy](https://github.com/aglensmith/stoplightiopy) - Python3 API Client and CLI for [Stoplight](https://stoplight.io/)
+### Infrastructure
+
+* Postgres
+
+### DevOps CI/CD
+
+* GitHub
+* Gitlab
+* Azure DevOps
+* SonarQube
+* SonarCloud
+
+### Platforms
+
+* BigCommerce
+* AmeriCommerce
